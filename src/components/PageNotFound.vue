@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import videoSrc from "@/assets/404.WeNjJPA6.mp4"
-
+import videoSrc from "@/assets/404.WeNjJPA6.mp4";
 </script>
 
 <template>

@@ -1,22 +1,24 @@
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
-import { config } from "./config";
+import NoAccess from "./components/NoAccess.vue";
 import PageNotFound from "./components/PageNotFound.vue";
 import Redirect from "./components/Redirect.vue";
-import NoAccess from "./components/NoAccess.vue";
+import { config } from "./config";
 
-const currentPath = ref(window.location.pathname.split('/').pop() || "");
+const currentPath = ref(window.location.pathname.split("/").pop() || "");
 const appName = ref("");
 
 const notFound = ref(false);
 const redirect = ref(false);
 const noAccess = ref(false);
 
-const redirectConfig = config.redirects.find(x => x.relativePath.includes(currentPath.value));
+const redirectConfig = config.redirects.find((x) =>
+    x.relativePath.includes(currentPath.value),
+);
 
 async function tryFetch(url: string) {
     try {
-        const response = await fetch(url, { method: 'GET' });
+        const response = await fetch(url, { method: "GET" });
         return response.ok;
     } catch (error) {
         return false;
@@ -28,7 +30,6 @@ onMounted(async () => {
         window.location.href = config.homepageUrl;
         return;
     }
-
 
     if (redirectConfig) {
         appName.value = redirectConfig.appName;
@@ -45,7 +46,6 @@ onMounted(async () => {
         notFound.value = true;
     }
 });
-
 </script>
 
 <template>
