@@ -1,6 +1,6 @@
 # BS-CH-KI Redirects
 
-A smart redirect application for Basel-Stadt AI applications that provides intelligent routing with health checks and user-friendly error handling. Built with Vue.js and TypeScript, it ensures seamless access to various AI services while handling unavailable services gracefully.
+A smart redirect application for Basel-Stadt AI services that are exclusively available within the Canton Basel-Stadt internal network. This application serves as a gateway that redirects internal users to the appropriate AI applications while providing user-friendly error pages for external users who cannot access these internal services. Built with Vue.js and TypeScript, it ensures proper access control and graceful handling of external requests.
 
 ![GitHub License](https://img.shields.io/github/license/DCC-BS/bs-ch-ki-redirects) [![Checked with Biome](https://img.shields.io/badge/Checked_with-Biome-60a5fa?style=flat&logo=biome)](https://biomejs.dev)
 
