@@ -489,8 +489,17 @@ html {
     margin: auto;
 }
 
-.container {
+.container-center {
     margin-top: 1rem;
+}
+
+@media (min-width:768px) {
+    .container-center {
+        margin-top: 5rem;
+    }
+}
+
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -503,7 +512,6 @@ html {
 
 @media (min-width:768px) {
     .container {
-        margin-top: 5rem;
         max-width: 768px;
         padding-left: 20px;
         padding-right: 20px

@@ -31,6 +31,12 @@ onMounted(async () => {
         return;
     }
 
+    if(currentPath.value === "redirect") {
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        redirect.value = true;
+        return;
+    }
+
     if (redirectConfig) {
         appName.value = redirectConfig.appName;
 
@@ -59,7 +65,7 @@ onMounted(async () => {
         <div v-else-if="noAccess">
             <NoAccess :appName="redirectConfig?.appName ?? ''" />
         </div>
-        <div v-else class="container">
+        <div v-else class="container container-center flex flex-col">
             <div class="loader"></div>
         </div>
     </div>

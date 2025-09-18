@@ -7,7 +7,7 @@ const props = defineProps<{
 </script>
 
 <template>
-    <div class="container">
+    <div class="container container-center">
         <div>
             <h1 class="h1 text-primary-600 hyphens-auto text-balance mb-20">Sie haben keinen Zugriff auf {{
                 props.appName }}
