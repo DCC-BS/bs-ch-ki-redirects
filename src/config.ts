@@ -14,13 +14,13 @@ export const config = {
     homepageUrl: "https://www.bs.ch/ki",
     redirects: [
         {
-            relativePath: "/textmate",
+            relativePath: "textmate",
             to: "https://textmate.uvk8sbswc19.cmp.bs.ch",
             checkUrl: "https://textmate.uvk8sbswc19.cmp.bs.ch/api/ping",
             appName: "TextMate",
         },
         {
-            relativePath: "/transcribo",
+            relativePath: "transcribo",
             to: "https://transcribo.uvk8sbswc19.cmp.bs.ch",
             checkUrl: "https://transcribo.uvk8sbswc19.cmp.bs.ch/api/ping",
             appName: "Transcribo",
