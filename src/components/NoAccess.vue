@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import DataBsLogo from '../assets/databs_log.png';
+
 const props = defineProps<{
     appName: string;
 }>();
@@ -7,13 +9,13 @@ const props = defineProps<{
 <template>
     <div class="container">
         <div>
-            <h1 class="h1 text-primary-600 hyphens-auto text-balance mb-20">Sie haben keinen Zugriff auf {{ props.appName }}
+            <h1 class="h1 text-primary-600 hyphens-auto text-balance mb-20">Sie haben keinen Zugriff auf {{
+                props.appName }}
             </h1>
             <div class="ck-content hyphens-auto lg:hyphens-none">
                 <p>
-                    Sie versuchen, auf {{ props.appName }} zuzugreifen, die momentan ausschliesslich für Mitarbeitende der
+                    Sie versuchen, auf {{ props.appName }} zuzugreifen, die ausschliesslich für Mitarbeitende der
                     <strong>Verwaltung des Kantons Basel-Stadt</strong> verfügbar ist. Ein Zugriff von extern ist
-                    zurzeit
                     nicht möglich.
                 </p>
             </div>
@@ -23,7 +25,8 @@ const props = defineProps<{
             <div class="ck-content hyphens-auto lg:hyphens-none">
                 <p>
                     Wir möchten Ihnen dennoch die Möglichkeit geben, die Applikation kennenzulernen. Der Quellcode ist
-                    öffentlich auf dem <a href="https://github.com/DCC-BS" target="_blank"><strong>GitHub-Konto des DCC Data Competence Center</strong></a> unter der <strong>MIT-Lizenz</strong> verfügbar. Sie
+                    öffentlich auf dem <a href="https://github.com/DCC-BS" target="_blank"><strong>GitHub-Konto des DCC
+                            Data Competence Center</strong></a> unter der <strong>MIT-Lizenz</strong> verfügbar. Sie
                     können
                     ihn dort einsehen und herunterladen.
                 </p>
@@ -33,8 +36,20 @@ const props = defineProps<{
             <div class="ck-content hyphens-auto lg:hyphens-none">
                 <p>
                     Sollten Sie Fragen oder Anregungen haben, können Sie uns jederzeit per E-Mail unter
-                    <a href="mailto:dcc@bs.ch"><strong>dcc@bs.ch</strong></a> kontaktieren. Wir freuen uns auf Ihre Nachricht! 📨
+                    <a href="mailto:dcc@bs.ch"><strong>dcc@bs.ch</strong></a> kontaktieren. Wir freuen uns auf Ihre
+                    Nachricht! 📨
                 </p>
+            </div>
+
+            <div class="mt-20 paragraph--margin flex flex-col">
+                <h3 class="font-bold">Yanick Schraner</h3>
+                <div>Leiter Künstliche Intelligenz, Data Competence Center</div>
+                <div class="flex gap-10 mt-15"><a href="tel:+41-61-267-87-25" class="button is-action is-link">+41 61
+                        267 87 25</a><a href="mailto:dcc@bs.ch" class="button is-action is-link">dcc@bs.ch</a></div>
+            </div>
+
+            <div class="databs-logo">
+                <img :src="DataBsLogo" alt="Data BS" class="mt-2" />
             </div>
         </div>
     </div>
@@ -43,5 +58,14 @@ const props = defineProps<{
 <style>
 .mt-2 {
     margin-top: 0.5rem;
+}
+
+.databs-logo {
+    display: flex;
+    justify-self: center;
+}
+
+.databs-logo img {
+    height: 80px;
 }
 </style>
