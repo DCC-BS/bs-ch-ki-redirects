@@ -23,9 +23,7 @@ const props = defineProps<{
             <div class="ck-content hyphens-auto lg:hyphens-none">
                 <p>
                     Wir möchten Ihnen dennoch die Möglichkeit geben, die Applikation kennenzulernen. Der Quellcode ist
-                    öffentlich auf dem <a href="https://github.com/DCC-BS" target="_blank"><strong>GitHub-Konto des DCC
-                            -
-                            Data Competence Center</strong></a> unter der <strong>MIT-Lizenz</strong> verfügbar. Sie
+                    öffentlich auf dem <a href="https://github.com/DCC-BS" target="_blank"><strong>GitHub-Konto des DCC Data Competence Center</strong></a> unter der <strong>MIT-Lizenz</strong> verfügbar. Sie
                     können
                     ihn dort einsehen und herunterladen.
                 </p>
