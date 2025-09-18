@@ -32,3 +32,4 @@ jobs:
       with:
         name: vue-dist
         path: dist
+        include-hidden-files: true
