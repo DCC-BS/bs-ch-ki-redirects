@@ -4,5 +4,5 @@
     "config:recommended"
   ]
   "internalChecksFilter": "strict",
-  "minimumReleaseAge": "14 days",
+  "minimumReleaseAge": "14 days"
 }
