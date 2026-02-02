@@ -9,15 +9,23 @@ const props = defineProps<{
 <template>
     <div class="container container-center">
         <div>
-            <h1 class="h1 text-primary-600 hyphens-auto text-balance mb-20">Sie haben keinen Zugriff auf {{
+            <!-- <h1 class="h1 text-primary-600 hyphens-auto text-balance mb-20">Sie haben keinen Zugriff auf {{
                 props.appName }}
+            </h1> -->
+            <h1 class="h1 text-primary-600 hyphens-auto text-balance mb-20">
+                Aktuell gibt es eine Störung auf der IT BS Infrastruktur
             </h1>
             <div class="ck-content hyphens-auto lg:hyphens-none">
                 <p>
+                    {{ props.appName }} steht aktuell nicht zur Verfügung. Die IT BS arbeitet an einer Lösung. Probieren
+                    Sie es bitte später noch einmal.
+                </p>
+
+                <!-- <p>
                     Sie versuchen, auf {{ props.appName }} zuzugreifen, die ausschliesslich für Mitarbeitende der
                     <strong>Verwaltung des Kantons Basel-Stadt</strong> verfügbar ist. Ein Zugriff von extern ist
                     nicht möglich.
-                </p>
+                </p> -->
             </div>
 
 
