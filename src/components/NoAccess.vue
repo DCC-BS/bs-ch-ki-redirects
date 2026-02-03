@@ -3,6 +3,7 @@ import DataBsLogo from '../assets/databs_log.png';
 
 const props = defineProps<{
     appName: string;
+    redirectTo?: string;
 }>();
 </script>
 
@@ -17,6 +18,12 @@ const props = defineProps<{
                     Sie versuchen, auf {{ props.appName }} zuzugreifen, die ausschliesslich für Mitarbeitende der
                     <strong>Verwaltung des Kantons Basel-Stadt</strong> verfügbar ist. Ein Zugriff von extern ist
                     nicht möglich.
+                </p>
+                <p>
+                    Falls Sie für die Verwaltung arbeiten und sich im kantonalen Netzwerk befinden, wird diese Meldung 
+                    irrtümlich angezeigt. Klicken Sie bitte klicken Sie bitte
+                    <strong><a :href="props.redirectTo">hier</a></strong>,
+                    um direkt zur Anwendung zu gelangen.
                 </p>
             </div>
 

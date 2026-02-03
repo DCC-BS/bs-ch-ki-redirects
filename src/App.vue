@@ -63,7 +63,7 @@ onMounted(async () => {
             <Redirect :to="redirectConfig?.to || ''" :appName="redirectConfig?.appName ?? ''" />
         </div>
         <div v-else-if="noAccess">
-            <NoAccess :appName="redirectConfig?.appName ?? ''" />
+            <NoAccess :appName="redirectConfig?.appName ?? ''" :redirectTo="redirectConfig?.to" />
         </div>
         <div v-else class="container container-center flex flex-col">
             <div class="loader"></div>
