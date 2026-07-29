@@ -22,7 +22,7 @@
         "@tsconfig/node24": "^24.0.0",
         "@types/node": "^24.0.0",
         "@vitejs/plugin-vue": "^6.0.1",
-        "@vue/tsconfig": "^0.8.0",
+        "@vue/tsconfig": "^0.9.0",
         "cpx2": "^8.0.0",
         "npm-run-all2": "^8.0.4",
         "typescript": "~5.9.0",
