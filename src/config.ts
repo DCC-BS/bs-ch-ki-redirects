@@ -14,19 +14,19 @@ export const config = {
         {
             relativePath: "textmate",
             to: "https://textmate.kdkp.intranet.bs.ch",
-            checkUrl: "https://textmate.kdkp.intranet.bs.ch/api/ping",
+            checkUrl: "https://textmate.svc.kdkp-kiw.bsucsk8sa019.cmp.bs.ch/api/ping",
             appName: "TextMate",
         },
         {
             relativePath: "transcribo",
             to: "https://transcribo.kdkp.intranet.bs.ch",
-            checkUrl: "https://transcribo.kdkp.intranet.bs.ch/api/ping",
+            checkUrl: "https://transcribo.svc.kdkp-kiw.bsucsk8sa019.cmp.bs.ch/api/ping/",
             appName: "Transcribo",
         },
         {
             relativePath: "bs-uebersetzer",
             to: "https://bs-uebersetzer.kdkp.intranet.bs.ch",
-            checkUrl: "https://bs-uebersetzer.kdkp.intranet.bs.ch/api/ping",
+            checkUrl: "https://bs-uebersetzer.svc.kdkp-kiw.bsucsk8sa019.cmp.bs.ch/api/ping",
             appName: "BS Übersetzer",
         },
         {
