@@ -20,7 +20,7 @@ export const config = {
         {
             relativePath: "transcribo",
             to: "https://transcribo.kdkp.intranet.bs.ch",
-            checkUrl: "https://transcribo.svc.kdkp-kiw.bsucsk8sa019.cmp.bs.ch/api/ping/",
+            checkUrl: "https://transcribo.kdkp.intranet.bs.ch/api/ping/",
             appName: "Transcribo",
         },
         {
