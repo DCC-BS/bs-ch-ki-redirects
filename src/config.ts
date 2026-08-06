@@ -14,7 +14,7 @@ export const config = {
         {
             relativePath: "textmate",
             to: "https://textmate.kdkp.intranet.bs.ch",
-            checkUrl: "https://textmate.svc.kdkp-kiw.bsucsk8sa019.cmp.bs.ch/api/ping",
+            checkUrl: "https://textmate.kdkp.intranet.bs.ch/api/ping",
             appName: "TextMate",
         },
         {
@@ -26,7 +26,7 @@ export const config = {
         {
             relativePath: "bs-uebersetzer",
             to: "https://bs-uebersetzer.kdkp.intranet.bs.ch",
-            checkUrl: "https://bs-uebersetzer.svc.kdkp-kiw.bsucsk8sa019.cmp.bs.ch/api/ping",
+            checkUrl: "https://bs-uebersetzer.kdkp.intranet.bs.ch/api/ping",
             appName: "BS Übersetzer",
         },
         {
