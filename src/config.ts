@@ -30,6 +30,12 @@ export const config = {
             appName: "BS Übersetzer",
         },
         {
+            relativePath: "chat",
+            to: "https://chat.kdkp.intranet.bs.ch",
+            checkUrl: "https://chat.kdkp.intranet.bs.ch/health",
+            appName: "Bebbi Bot",
+        },
+        {
             relativePath: "extern",
             to: "https://extern.kdkp.intranet.bs.ch",
             checkUrl: "https://no-exist/api/ping",
