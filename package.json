@@ -15,7 +15,7 @@
         "check": "biome check --write"
     },
     "dependencies": {
-        "vue": "^3.5.18"
+        "vue": "^3.5.44"
     },
     "devDependencies": {
         "@biomejs/biome": "2.5.4",
